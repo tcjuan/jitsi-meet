@@ -54,7 +54,8 @@ ReducerRegistry.register(
         switch (action.type) {
         case _ADD_AUDIO_ELEMENT:
         case _REMOVE_AUDIO_ELEMENT:
-            return _addOrRemoveAudioElement(state, action);
+		return state;
+         //   return _addOrRemoveAudioElement(state, action);
 
         case REGISTER_SOUND:
             return _registerSound(state, action);

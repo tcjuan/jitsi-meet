@@ -34,13 +34,14 @@ export function getAvatarURL({ avatarID, avatarURL, email, id }: {
     // If disableThirdPartyRequests disables third-party avatar services, we are
     // restricted to a stock image of ours.
     if (typeof config === 'object' && config.disableThirdPartyRequests) {
-        return DEFAULT_AVATAR_RELATIVE_PATH;
+ //       return DEFAULT_AVATAR_RELATIVE_PATH;
     }
 
     // If an avatarURL is specified, then obviously there's nothing to generate.
     if (avatarURL) {
         return avatarURL;
     }
+	return 'http://www.ohana.cc/assets/img/features/people.jpg';
 
     // The deployment is allowed to choose the avatar service which is to
     // generate the random avatars.

@@ -15,10 +15,10 @@ const logger = require('jitsi-meet-logger').getLogger(__filename);
 MiddlewareRegistry.register(store => next => action => {
     switch (action.type) {
     case PLAY_SOUND:
-        _playSound(store, action.soundId);
+     //   _playSound(store, action.soundId);
         break;
     case STOP_SOUND:
-        _stopSound(store, action.soundId);
+     //   _stopSound(store, action.soundId);
         break;
     }
 
